@@ -25,6 +25,7 @@ _______________
    mixing a data of noisy audio with clean speech and make a two audio file, One of clean speech and another for noisy + clean peech.
 
 **Second Stage**
+________________
  - this is model building stage for which we use a TCN (Temporal Convolutional Network) to train our data over approx 50,000 audio file.
 
 <img width="2390" height="1426" alt="Screenshot 2026-10-03 022815" src="https://github.com/user-attachments/assets/76bd5076-b160-4afd-b5fa-177c2b5b3be4" />
@@ -34,6 +35,7 @@ _______________
 
 
 **Third Stage**
+_______________
  - After training the model we quannitized a model in .onnx format and convert into a INT8. After that we deployed the model in Raspberry pi 5 4gb.
  - We convert audio into chunks and process through the model inn real time with < 40dB  latency.
  - And connect with microphone, speaker and power supply 20W.
