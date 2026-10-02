@@ -2,6 +2,7 @@
 The real-time Active Noise Cancellation (ANC) pipeline deploys a compact Temporal Convolutional Network (TCN) on a Raspberry Pi 5 using dual USB audio devices.
 
 **First Stage**
+_______________
  - Data Collection
     we collect data over 23480 raw audio file of cear speech and noisy audio file in .wav format each.
     The noisy audio contain-
